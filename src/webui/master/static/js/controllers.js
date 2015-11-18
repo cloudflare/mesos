@@ -209,6 +209,7 @@
   // Update the outermost scope with the metrics/snapshot endpoint.
   function updateMetrics($scope, $timeout, data) {
     var metrics = JSON.parse(data);
+    $scope.running_tasks = metrics['master/tasks_running'];
     $scope.staged_tasks = metrics['master/tasks_staging'];
     $scope.started_tasks = metrics['master/tasks_starting'];
     $scope.finished_tasks = metrics['master/tasks_finished'];
@@ -510,6 +511,7 @@
             $scope.state = {};
           }
 
+          $scope.state.running_tasks = response['slave/tasks_running'];
           $scope.state.staged_tasks = response['slave/tasks_staging'];
           $scope.state.started_tasks = response['slave/tasks_starting'];
           $scope.state.finished_tasks = response['slave/tasks_finished'];
