@@ -127,7 +127,7 @@
 
     // Set instead of add the timestamp since this is an instantaneous view of
     // CPU usage since the last poll.
-    this.timestamp = statistics.timestamp;
+    this.timestamp = new Date().getTime() / 1000;
   };
 
   Statistics.prototype.diffUsage = function(statistics) {
