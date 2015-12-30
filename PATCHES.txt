@@ -1,0 +1,7 @@
+The following patches are applied on top of release branch of vanialla mesos master:
+
+d247372226d6cbbe57fa856a0b3788e60200ef92 Smaller MAX_COMPLETED_TASKS_PER_FRAMEWORK to address MESOS-3307
+bf35a133a571350745a5ccc268cfd191ffc6ef33 MESOS-3950: show running task count in web ui
+9f22b90a388064e929dfe95f892fa4381f175430 MESOS-3972: fix framework cpu counters on slave page
+b17c5caf7bfdd1c74e70fae9622e7f461f2b4b4b MESOS-3970: fix cpu usage in mesos ui
+bdc95b9aaec5575b0e4b05d7ffaa41d606fcdf17 MESOS-3959: show slave hostname on executor page
